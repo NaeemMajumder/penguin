@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --header-bg:#FFFBF0;
+    --orange:#FABE4C;
+    --heading:#363958;
+    --paragraph:#3E3E3E;
+    --img-bg:#F1F1F1;
+}
+
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+
+.bebas{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.width{
+    @apply max-w-screen-xl mx-auto;
+}
+
+.p{
+    @apply text-xl text-[var(--paragraph)] leading-normal font-normal;
+}
+
+.h2{
+    @apply text-center bebas text-5xl text-[var(--heading)] mb-12
+}
+
+.btn{
+    @apply bg-gradient-to-r from-[#A4BC46] to-[#85A019] font-semibold flex justify-center items-center gap-2 text-white rounded-lg uppercase w-44 h-16 text-lg;
+}
+
+/* item card */
+
+.card{
+    @apply p-5  shadow-xl rounded-2xl mb-10;
+}
+
+.card-img{
+    @apply w-full bg-[var(--img-bg)] rounded-2xl mb-8;
+}
+
+.h3{
+    @apply roboto text-3xl font-bold text-[var(--heading)] mb-4;
+}
+
+.card-content{
+    @apply flex justify-between items-center px-2;
+}
+
+
+/* Desktop sytle */
+
+.li{
+    @apply md:block roboto md:font-medium md:text-lg;
+}
+
+/* No name part */
+
+.noname-card{
+    @apply roboto md:grid md:grid-flow-col md:grid-rows-2 md:gap-x-4;
+}
+
+.noname-img{
+    @apply md:mb-0 md:row-span-2 md:justify-start;
+}
